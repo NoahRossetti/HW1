@@ -25,8 +25,29 @@ const int ARRAY_SIZE = 500;
 int Stack[ARRAY_SIZE];
 int IR[3];
 int PAS[ARRAY_SIZE];
+FILE *inputfile = fopen("input", "r");
+
+  // Lets us know if there is a problem retrieving file ( will remove later )
+if(inputfile==NULL){
+    printf("no file ");
+}
+
+  
+// inserts instructions from file to pas array
+while(fscanf(inputfile, "%d", &placeholder )){
+     PAS[i][j] =placeholder;
+     j++;
+     if(j>2){
+        j=0;
+        i++;
+     }
 
 
+}
+
+
+
+  
   while(eop){
   switch{
   
