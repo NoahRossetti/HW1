@@ -72,39 +72,55 @@ while(fscanf(inputfile, "%d", &placeholder )){
 
     case 3:
       sp=sp-1; 
-      pas[sp]=pas[base(bp,l)-m];
+      pas[sp]=pas[base(bp,l)-ri[2];
 
     break;
 
     case 4:
-      pas[base(bp,n)-m]=pas[sp]; 
+      pas[base(bp,n)-ri[2]]=pas[sp]; 
       sp=sp+1
 
     break;
 
     case 5:
-      //pas[sp-1]
+      pas[sp-1]=base(bp,ri[1]);
+      pas[sp-2]=bp;
+      pas[sp-3]=pc
+      bp=sp-1;
+      ps=ri[2];      
 
     break;
 
     case 6:
-      //
+      sp=sp-r[2];
 
     break;
 
     case 7:
-      //
+      pc=r[2];
 
     break;
 
     case 8:
-      //
-
+      if(pas[sp]==0){
+      pc=a;
+      }
+      sp=sp+1;
     break;
 
     case 9:
-      //
+      if(r[2]==1){
 
+      }
+       else if(r[2]==2){
+
+      }
+      else if(r[2]==3){
+
+      }
+
+
+      
     break;
 
     //Arithmentic operations will go in case 0 and will vary based on l
