@@ -27,7 +27,7 @@ int pc = 10;
 int i =10;
 
 int pas[ARRAY_SIZE];
-int Stack[ARRAY_SIZE];
+
 int ir[3];
 
 FILE *inputfile = fopen("input", "r");
