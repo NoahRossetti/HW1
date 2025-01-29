@@ -45,8 +45,12 @@ while(fscanf(inputfile, "%d", &placeholder )){
 
 
 
-  
+  //This is where the execution steps will take place
   while(eop){
+    //Places instructions from pas into the instruction register
+    ir[0]=pas[pc];
+    ir[1]=pas[pc+1];
+    ir[2]=pas[pc+2];
   switch{
   
 
