@@ -110,13 +110,15 @@ while(fscanf(inputfile, "%d", &placeholder )){
 
     case 9:
       if(r[2]==1){
-
+      printf("%d", pas[sp]);
+      sp=sp+1;
       }
        else if(r[2]==2){
+         //not sure what to do here
 
       }
       else if(r[2]==3){
-
+        eop=0;
       }
 
 
