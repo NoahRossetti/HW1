@@ -17,6 +17,7 @@ return arb;
 }
 
 int main(){
+int eop = 1
 int bp = 499;
 int sp = 500;
 int pc = 10;
@@ -26,7 +27,7 @@ int IR[3];
 int PAS[ARRAY_SIZE];
 
 
-  
+  while(eop){
   switch{
   
 
@@ -34,7 +35,7 @@ int PAS[ARRAY_SIZE];
 
     
   }
-
+  }
 
 
 
