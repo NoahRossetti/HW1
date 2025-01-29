@@ -1,9 +1,9 @@
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+const int ARRAY_SIZE = 500;
+int pas[ARRAY_SIZE]={0};
 
 int base( int BP, int L)
 {
@@ -16,16 +16,20 @@ L--;
 return arb;
 }
 
+
 int main(){
+int placeholder;
 int op;
-int eop = 1
+int eop = 1;
 int bp = 499;
 int sp = 500;
 int pc = 10;
-const int ARRAY_SIZE = 500;
-int Stack[ARRAY_SIZE];
-int IR[3];
-int PAS[ARRAY_SIZE];
+int i =10;
+
+
+
+int ir[3];
+
 FILE *inputfile = fopen("input", "r");
 
   // Lets us know if there is a problem retrieving file ( will remove later )
@@ -33,16 +37,16 @@ if(inputfile==NULL){
     printf("no file ");
 }
 
-  
+
 // inserts instructions from file to pas array
 while(fscanf(inputfile, "%d", &placeholder )){
-     PAS[i] =placeholder;
+     pas[i] = placeholder;
         i++;
 
 }
 
 
-}
+
 
 
 
