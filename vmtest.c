@@ -3,7 +3,7 @@
 #include <string.h>
 
 const int ARRAY_SIZE = 500;
-
+int pas[ARRAY_SIZE]={0};
 
 int base( int BP, int L)
 {
@@ -26,7 +26,7 @@ int sp = 500;
 int pc = 10;
 int i =10;
 
-int pas[ARRAY_SIZE]={0};
+
 
 int ir[3];
 
