@@ -5,6 +5,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+int base( int BP, int L)
+{
+int arb = BP; // arb = activation record base
+while ( L > 0) //find base L levels down
+{
+arb = pas[arb];
+L--;
+}
+return arb;
+}
 
 int main(){
 int bp = 499;
