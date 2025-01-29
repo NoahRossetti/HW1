@@ -35,12 +35,10 @@ if(inputfile==NULL){
   
 // inserts instructions from file to pas array
 while(fscanf(inputfile, "%d", &placeholder )){
-     PAS[i][j] =placeholder;
-     j++;
-     if(j>2){
-        j=0;
+     PAS[i] =placeholder;
         i++;
-     }
+
+}
 
 
 }
