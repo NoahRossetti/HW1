@@ -26,7 +26,7 @@ int sp = 500;
 int pc = 10;
 int i =10;
 
-int pas[ARRAY_SIZE];
+int pas[ARRAY_SIZE]={0};
 
 int ir[3];
 
