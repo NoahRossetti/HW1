@@ -17,6 +17,7 @@ return arb;
 }
 
 int main(){
+int op;
 int eop = 1
 int bp = 499;
 int sp = 500;
@@ -51,12 +52,44 @@ while(fscanf(inputfile, "%d", &placeholder )){
     ir[0]=pas[pc];
     ir[1]=pas[pc+1];
     ir[2]=pas[pc+2];
-  switch{
-  
+    op = ir[0];
+  switch(op){
+    case 1:
 
+    break;
 
+    case 2:
 
-    
+    break;
+
+    case 3:
+
+    break;
+
+    case 4:
+
+    break;
+
+    case 5:
+
+    break;
+
+    case 6:
+
+    break;
+
+    case 7:
+
+    break;
+
+    case 8:
+
+    break;
+
+    case 9:
+
+    break;
+
   }
   }
 
