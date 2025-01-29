@@ -59,27 +59,31 @@ while(fscanf(inputfile, "%d", &placeholder )){
     op = ir[0];
   switch(op){
     case 1:
-      //sp=sp-1; pas[sp]=m
+      sp=sp-1; 
+      pas[sp]=m;
 
     break;
 
     case 2:
-      //so = sp-1; pas{sp =pas[base(bp,k)-m]
+      sp=bp+1; 
+      bp==pas[sp-2];pc=pas[sp-3];
 
     break;
 
     case 3:
-      //
+      sp=sp-1; 
+      pas[sp]=pas[base(bp,l)-m];
 
     break;
 
     case 4:
-      //
+      pas[base(bp,n)-m]=pas[sp]; 
+      sp=sp+1
 
     break;
 
     case 5:
-      //
+      //pas[sp-1]
 
     break;
 
