@@ -6,8 +6,6 @@ Overall TODO
 - run testcases[done (without printing all the activation records)
 - make sure output perfect match(same as previous)
 
-- add readme n other stuff
-- make sure we didnt do one of the warcrimes thatll nuke our score
 - ctrl f and remove TODO and other temporary comments
 *********************************************************/
 
@@ -141,6 +139,7 @@ i=0;
 
 
         }
+
     continue;
     break;
 
