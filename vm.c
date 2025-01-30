@@ -85,16 +85,16 @@ while(fscanf(inputfile, "%d", &placeholder )){
     break;
 
     case 5:
-      pas[sp-1]=base(bp,ri[1]);
-      pas[sp-2]=bp;
-      pas[sp-3]=pc
-      bp=sp-1;
+      pas[sp+1]=base(bp,ri[1]);
+      pas[sp+2]=bp;
+      pas[sp+3]=pc
+      bp=sp+1;
       ps=ri[2];      
 
     break;
 
     case 6:
-      sp=sp-r[2];
+      sp=sp+r[2];
 
     break;
 
@@ -113,7 +113,7 @@ while(fscanf(inputfile, "%d", &placeholder )){
     case 9:
       if(r[2]==1){
       printf("%d", pas[sp]);
-      sp=sp+1;
+      sp=sp-1;
       }
        else if(r[2]==2){
          //not sure what to do here
@@ -131,18 +131,18 @@ while(fscanf(inputfile, "%d", &placeholder )){
     case 0;
     switch(ir[1]){
       case 1;
-      pas[sp+1]=pas[sp+1]+pas[sp];
-      sp=sp+1;
+      pas[sp-1]=pas[sp-1]+pas[sp];
+      sp=sp-1;
 
       break;
       case 2;
-      pas[sp+1]=pas[sp+1] - pas[sp];
-      sp=sp+1;
+      pas[sp-1]=pas[sp-1] - pas[sp];
+      sp=sp-1;
 
       break;
       case 3;
-      pas[sp+1]= pas[sp+1]*pas[sp];
-      sp=sp+1;
+      pas[sp-1]= pas[sp-1]*pas[sp];
+      sp=sp-1;
 
       break;
       case 4;
