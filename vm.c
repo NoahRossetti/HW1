@@ -3,7 +3,7 @@
 #include <string.h>
 
 const int ARRAY_SIZE = 500;
-int pas[ARRAY_SIZE]={0};
+int pas[500]={0};
 
 int base( int BP, int L)
 {
