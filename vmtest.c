@@ -70,8 +70,8 @@ while(fscanf(inputfile, "%d", &placeholder )==1){
 }
 
 
-
-printf("initial values %d\t%d\t%d", pc, bp, sp);
+printf("                 PC      BP      SP      stack");
+printf("\ninitial values   %d     %d     %d", pc, bp, sp);
 
 i=0;
 
@@ -128,7 +128,7 @@ i=0;
         ar_tracking[bp]=-1;
 
       pc=ir[2];
-       printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+       printf("\n %d %d %d \t %d\t%d\t%d\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
        //printing out the pas
 
@@ -150,7 +150,7 @@ i=0;
     case 7:
       pc=ir[2];
 
-       printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+       printf("\n %d %d %d \t %d\t%d\t%d\t\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
        //printing out the pas
 
@@ -171,7 +171,7 @@ i=0;
       pc=ir[2];
       sp=sp+1;
 
-       printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+       printf("\n %d %d %d  \t %d\t%d\t%d\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
        //printing out the pas
 
@@ -364,7 +364,7 @@ i=0;
     //break;
   }
 
-     printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+     printf("\n  %d %d %d \t %d \t%d \t%d\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
        //printing out the pas
 
