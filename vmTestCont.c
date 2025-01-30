@@ -122,7 +122,7 @@ i=0;
       }
        else if(ir[2]==2){
          //not sure what to do here
-
+        //scanf()
       }
       else if(ir[2]==3){
         eop=0;
@@ -132,7 +132,7 @@ i=0;
 
     break;
 
-    //Arithmentic operations will go in case 0 and will vary based on l
+    //Arithmentic operations will go in case 0 and will vary based on L
    case 2:
     if(ir[1]==0&&ir[2]==0){
       sp=bp+1;
