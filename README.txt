@@ -6,6 +6,9 @@ This project is a P-Code Virtual machine
 ## Compilation Instructions
 [Commands or steps to compile your code]
 // TODO
+
+To compile and run this program, first open a bash terminal and navigate to the directory containing vm.c and the input file.
+To compile: "gcc vm.c 
 ## Usage
 [How to run the program, including any required arguments]
 // TODO
