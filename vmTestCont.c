@@ -23,13 +23,13 @@ int pas[500]={0};
 
 int base( int BP, int L)
 {
-int arb = BP; // arb = activation record base
-while ( L > 0) //find base L levels down
-{
-arb = pas[arb];
-L--;
-}
-return arb;
+	int arb = BP; // arb = activation record base
+	while ( L > 0) //find base L levels down
+	{
+	arb = pas[arb];
+	L--;
+	}
+	return arb;
 }
 
 
@@ -58,10 +58,9 @@ if(inputfile==NULL){
 
 // inserts instructions from file to pas array
 while(fscanf(inputfile, "%d", &placeholder )==1){
-     pas[i] = placeholder;
-     printf(" %d ", pas[i]);
-        i++;
-
+	pas[i] = placeholder;
+    printf(" %d ", pas[i]);
+	i++;
 }
 
 
@@ -82,13 +81,13 @@ i=0;
     op = ir[0];
 
   switch(op){
-    case 1:
+    case 1: //LIT - push constant value M onto the stack
       sp=sp-1;
       pas[sp]=ir[2];
 
     break;
 
-    case 3:
+    case 3:// LOD L,M  - load value to the top of the stack (or return from fucntion)
       sp=sp-1;
       //might need to flip signs
       pas[sp]=pas[base(bp,ir[1])]-ir[2];
