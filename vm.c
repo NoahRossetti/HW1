@@ -71,7 +71,7 @@ while(fscanf(inputfile, "%d", &placeholder )){
     break;
 
     case 3:
-      sp=sp+1; 
+      sp=sp-1; 
       //might need to flip signs
       pas[sp]=pas[base(bp,ir[1])]-ir[2];
 
