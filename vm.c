@@ -186,6 +186,7 @@ while(fscanf(inputfile, "%d", &placeholder )){
     break;
 
   }
+    pc=pc+3;
   }
 
 
