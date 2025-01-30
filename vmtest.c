@@ -47,6 +47,7 @@ int sp = 500;
 int pc = 10;
 int i =10;
 
+// array which keeps track of ar locations
 int ar_tracking[500];
 
 int ir[3]={0};
@@ -84,7 +85,9 @@ i=0;
        //printing out the pas
 
         for(i=499; i>=sp; i--){
-
+	// this will seperate the activation recoeds with a bar
+	if(ar_tracking[i]==-1)
+                printf("|");
             printf(" %d ", pas[i]);
 
 
@@ -124,7 +127,8 @@ i=0;
       pas[sp-2]=bp;
       pas[sp-3]=pc;
       bp=sp-1;
-
+      // allows for tracking of ar locations
+      ar_tracking[bp]=-1;
       pc=ir[2];
     continue;
     break;
