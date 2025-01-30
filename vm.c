@@ -129,33 +129,53 @@ while(fscanf(inputfile, "%d", &placeholder )){
     case 0;
     switch(ir[1]){
       case 1;
+      pas[sp+1]=pas[sp+1]+pas[sp];
+      sp=sp+1;
 
       break;
       case 2;
+      pas[sp+1]=pas[sp+1] - pas[sp];
+      sp=sp+1;
 
       break;
       case 3;
 
+      sp=sp+1;
+
       break;
       case 4;
+
+      sp=sp+1;
 
       break;
       case 5;
 
+      sp=sp+1;
+
       break;
       case 6;
+
+      sp=sp+1;
 
       break;
       case 7;
 
+      sp=sp+1;
+
       break;
       case 8;
+
+      sp=sp+1;
 
       break;
       case 9;
 
+      sp=sp+1;
+
       break;
       case 10;
+
+      sp=sp+1;
 
       break;
     }
