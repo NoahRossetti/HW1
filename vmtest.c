@@ -3,16 +3,18 @@
 #include <string.h>
 
 const int ARRAY_SIZE = 500;
+
 int pas[500]={0};
 
 int base( int BP, int L)
 {
-int arb = BP; // arb = activation record base
-while ( L > 0) //find base L levels down
-{
-arb = pas[arb];
-L--;
-}
+	int arb = BP; // arb = activation record base
+	while ( L > 0) //find base L levels down
+	{
+		arb = pas[arb];
+		L--;
+	}
+	
 return arb;
 }
 
@@ -35,6 +37,8 @@ FILE *inputfile = fopen("input", "r");
   // Lets us know if there is a problem retrieving file ( will remove later )
 if(inputfile==NULL){
     printf("no file ");
+
+	return 0;
 }
 
 
