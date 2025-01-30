@@ -1,3 +1,16 @@
+/********************************************************
+Overall TODO
+- need to fix case 9
+- need to implement ALU
+- check 3 and 4 for sign issues
+- ctrl f and remove TODO and like comments
+*********************************************************/
+
+
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -35,6 +48,8 @@ FILE *inputfile = fopen("input", "r");
   // Lets us know if there is a problem retrieving file ( will remove later )
 if(inputfile==NULL){
     printf("no file ");
+	
+	return 0;
 }
 
 
@@ -51,6 +66,7 @@ while(fscanf(inputfile, "%d", &placeholder )==1){
 printf("initial values %d\t%d\t%d", pc, bp, sp);
 
 i=0;
+	
   //This is where the execution steps will take place
   while(eop){
 
@@ -68,8 +84,6 @@ i=0;
       pas[sp]=ir[2];
 
     break;
-
-
 
     case 3:
       sp=sp-1;
