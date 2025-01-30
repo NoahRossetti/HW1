@@ -100,7 +100,7 @@ while(fscanf(inputfile, "%d", &placeholder )){
 
     case 7:
       pc=ir[2];
-
+      continue;
     break;
 
     case 8:
