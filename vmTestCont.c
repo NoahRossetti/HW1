@@ -6,7 +6,7 @@ Overall TODO
 - run testcases
 - make sure output perfect match
 
-- ctrl f and remove TODO and such comments
+- ctrl f and remove TODO and other temporary comments
 *********************************************************/
 
 
@@ -154,7 +154,9 @@ i=0;
     break;
 
    //Arithmentic operations in case 02 and will vary based on L
-   case 2:
+	  
+   case 2: //NGL idk what this is checking for
+	   //but tbf I can see the hat man rn im so sleep deprived TODO
     if(ir[1]==0&&ir[2]==0){
       sp=bp+1;
       bp==pas[sp-2];
@@ -164,6 +166,89 @@ i=0;
     else{
 
     switch(ir[2]){
+		
+		case 1: //ADD
+			pas[sp + 1] = pas[sp + 1] + pas[sp];
+	 		sp++;
+	  		break;
+	   
+	case 2: //SUB
+			pas[sp + 1] = pas[sp + 1] - pas[sp];
+	 		sp++;
+	  		break;
+	   
+	case 3: //MUL
+			pas[sp + 1] = pas[sp + 1] * pas[sp];
+	 		sp++;
+	  		break;
+	   
+	case 4: //DIV
+			pas[sp + 1] = pas[sp + 1] / pas[sp];
+	 		sp++;
+	  		break;
+	   
+	case 5: //EQL
+			if(pas[sp + 1] == pas[sp])
+	 		{
+	  			pas[sp + 1] = 1; // im assuming 1 for "is equal" and 0 for "not equal" TODO
+		  	}
+			else pas[sp + 1] = 0;
+			
+			sp++;
+	     	break;
+	   
+	case 6: //NEQ
+			if(pas[sp + 1] != pas[sp])
+	 		{
+	  			pas[sp + 1] = 1; // im assuming 1 for "not equal" and 0 for "equal" TODO
+	  		}
+			else pas[sp + 1] = 0;
+	   
+	   		sp++;
+	   		break;
+	   
+	case 7: //LSS
+		if(pas[sp + 1] < pas[sp])
+	 	{
+	  		pas[sp + 1] = 1; // im assuming 1 for "less" and 0 for "greater" TODO
+	  	}
+		else pas[sp + 1] = 0;
+	   
+	   sp++;
+	
+	   break;
+	
+	case 8: //LEQ
+			if(pas[sp + 1] <= pas[sp])
+	 		{
+	  			pas[sp + 1] = 1; // im assuming 1 for "less than or equal" and 0 for "not that" TODO
+	  		}
+			else pas[sp + 1] = 0;
+	   
+	   		sp++;
+			break;
+	
+	case 9: //GTR
+			if(pas[sp + 1] > pas[sp])
+	 		{
+	  			pas[sp + 1] = 1; // im assuming 1 for "greater" and 0 for "not that" TODO
+	  		}
+			else pas[sp + 1] = 0;
+		
+	   		sp++;
+	   		break;
+	
+	case 10: //GEQ
+			if(pas[sp + 1] >= pas[sp])
+	 		{
+	  			pas[sp + 1] = 1; // im assuming 1 for "greater" and 0 for "not that" TODO
+		  	}
+			else pas[sp + 1] = 0;
+		
+	   		sp++;
+			break;
+
+/*		// previous cases
       case 1:
       pas[sp+1]=pas[sp+1]+pas[sp];
       sp=sp+1;
@@ -221,6 +306,8 @@ i=0;
     //break;
   }
 
+  */
+
   pc=pc+3;
   i++;
   if(i==50) break;
@@ -239,33 +326,95 @@ i=0;
 }
 
 /****************************************************
-
-case 1: //ADD
-	pas[sp + 1] = pas[sp + 1] + pas[sp];
- 	sp++;
-  	break;
-   
-case 2: //SUB
-	pas[sp + 1] = pas[sp + 1] - pas[sp];
- 	sp++;
-  	break;
-   
-case3: //MUL
-	pas[sp + 1] = pas[sp + 1] * pas[sp];
- 	sp++;
-  	break;
-   
-case 4: //DIV
-	pas[sp + 1] = pas[sp + 1] / pas[sp];
- 	sp++;
-  	break;
-   
-case 5: //EQL
-	if(pas[sp + 1] == pas[sp])
- 	{
-  		pas[sp + 1] = 1; // im assuming 1 for "is equal" and 0 for not "equal" TODO
-  	}else pas[sp + 1] = 0;
-   
-	break;
- 
+	case 1: //ADD
+		pas[sp + 1] = pas[sp + 1] + pas[sp];
+	 	sp++;
+	  	break;
+	   
+	case 2: //SUB
+		pas[sp + 1] = pas[sp + 1] - pas[sp];
+	 	sp++;
+	  	break;
+	   
+	case3: //MUL
+		pas[sp + 1] = pas[sp + 1] * pas[sp];
+	 	sp++;
+	  	break;
+	   
+	case 4: //DIV
+		pas[sp + 1] = pas[sp + 1] / pas[sp];
+	 	sp++;
+	  	break;
+	   
+	case 5: //EQL
+		if(pas[sp + 1] == pas[sp])
+	 	{
+	  		pas[sp + 1] = 1; // im assuming 1 for "is equal" and 0 for "not equal" TODO
+		
+	  	}
+	   else pas[sp + 1] = 0;
+	   
+	   sp++;
+	   
+	   break;
+	   
+	case 6: //NEQ
+		if(pas[sp + 1] != pas[sp])
+	 	{
+	  		pas[sp + 1] = 1; // im assuming 1 for "not equal" and 0 for "equal" TODO
+		
+	  	}
+		else pas[sp + 1] = 0;
+	   
+	   sp++;
+	
+	   break;
+	   
+	case 7: //LSS
+		if(pas[sp + 1] < pas[sp])
+	 	{
+	  		pas[sp + 1] = 1; // im assuming 1 for "less" and 0 for "greater" TODO
+		
+	  	}
+		else pas[sp + 1] = 0;
+	   
+	   sp++;
+	
+	   break;
+	
+	case 8: //LEQ
+			if(pas[sp + 1] <= pas[sp])
+	 	{
+	  		pas[sp + 1] = 1; // im assuming 1 for "less than or equal" and 0 for "not that" TODO
+		
+	  	}
+		else pas[sp + 1] = 0;
+	   
+	   sp++;
+	
+	   break;
+	
+	case 9: //GTR
+			if(pas[sp + 1] > pas[sp])
+	 	{
+	  		pas[sp + 1] = 1; // im assuming 1 for "greater" and 0 for "not that" TODO
+		
+	  	}
+		else pas[sp + 1] = 0;
+	   
+	   sp++;
+	
+	   break;
+	
+	case 10: //GEQ
+			if(pas[sp + 1] >= pas[sp])
+	 	{
+	  		pas[sp + 1] = 1; // im assuming 1 for "greater" and 0 for "not that" TODO
+		
+	  	}
+		else pas[sp + 1] = 0;
+	   
+	   sp++;
+	
+	   break;
 *******************************************************/
