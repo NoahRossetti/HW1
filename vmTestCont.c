@@ -1,7 +1,7 @@
 /********************************************************
 Overall TODO
 - need to fix case 9 [done]
-- fix up ALU
+- fix up ALU		[done] (check it tho)
 - check 3 and 4 for sign issues
 - run testcases
 - make sure output perfect match
