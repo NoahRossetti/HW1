@@ -90,7 +90,7 @@ while(fscanf(inputfile, "%d", &placeholder )){
       pas[sp-3]=pc;
       bp=sp-1;
       pc=ir[2];      
-
+      continue;
     break;
 
     case 6:
