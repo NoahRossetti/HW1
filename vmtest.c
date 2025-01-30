@@ -47,7 +47,6 @@ int sp = 500;
 int pc = 10;
 int i =10;
 
-// array which keeps track of ar locations
 int ar_tracking[500];
 
 int ir[3]={0};
@@ -80,18 +79,17 @@ i=0;
   while(eop){
 
 
-        printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+        //printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
        //printing out the pas
 
-        for(i=499; i>=sp; i--){
-	// this will seperate the activation recoeds with a bar
-	if(ar_tracking[i]==-1)
-                printf("|");
-            printf(" %d ", pas[i]);
+      // for(i=499; i>=sp; i--){
+           // if(ar_tracking[i]==-1)
+             //   printf("|");
+            //printf(" %d ", pas[i]);
 
 
-        }
+       //}
 
 
     //Places instructions from pas into the instruction register
@@ -127,9 +125,20 @@ i=0;
       pas[sp-2]=bp;
       pas[sp-3]=pc;
       bp=sp-1;
-      // allows for tracking of ar locations
-      ar_tracking[bp]=-1;
+        ar_tracking[bp]=-1;
+
       pc=ir[2];
+       printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+
+       //printing out the pas
+
+        for(i=499; i>=sp; i--){
+            if(ar_tracking[i]==-1)
+                printf("|");
+            printf(" %d ", pas[i]);
+
+
+        }
     continue;
     break;
 
@@ -140,6 +149,19 @@ i=0;
 
     case 7:
       pc=ir[2];
+
+       printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+
+       //printing out the pas
+
+        for(i=499; i>=sp; i--){
+            if(ar_tracking[i]==-1)
+                printf("|");
+            printf(" %d ", pas[i]);
+
+
+        }
+
       continue;
 
     break;
@@ -148,6 +170,19 @@ i=0;
       if(pas[sp]==0){
       pc=ir[2];
       sp=sp+1;
+
+       printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+
+       //printing out the pas
+
+        for(i=499; i>=sp; i--){
+            if(ar_tracking[i]==-1)
+                printf("|");
+            printf(" %d ", pas[i]);
+
+
+        }
+
       continue;
       }
 
@@ -155,13 +190,14 @@ i=0;
 
     case 9:
       if(ir[2]==1){
-      printf("\nOutput result is %d", pas[sp]);
+      printf("\nOutput result is: %d", pas[sp]);
       sp=sp+1;
       }
        else if(ir[2]==2){
 
         sp--;
-	scanf("%d", &pas[sp]);
+        printf("\nPlease Enter an Integer: ");
+	scanf(" %d", &pas[sp]);
 
 	//printf("");//debuggy
 
@@ -180,8 +216,9 @@ i=0;
        //one of the functions where ar is updated
     if(ir[1]==0&&ir[2]==0){
       sp=bp+1;
-      bp==pas[sp-2];
+      bp=pas[sp-2];
       pc=pas[sp-3];
+
      break;
     }
     else{
@@ -327,8 +364,18 @@ i=0;
     //break;
   }
 
+     printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
-   // printf("\n %d %d %d %d %d %d", ir[0],ir[1],ir[2],pc,bp,sp);
+       //printing out the pas
+
+        for(i=499; i>=sp; i--){
+            if(ar_tracking[i]==-1)
+                printf("|");
+            printf(" %d ", pas[i]);
+
+
+        }
+
   pc=pc+3;
 
   }
@@ -336,7 +383,17 @@ i=0;
 
 
 
+ //printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
+       //printing out the pas
+
+        //for(i=499; i>=sp; i--){
+           // if(ar_tracking[i]==-1)
+         //       printf("|");
+           // printf(" %d ", pas[i]);
+
+
+    //    }
 
 
 
@@ -438,3 +495,4 @@ i=0;
 
 	   break;
 *******************************************************/
+
