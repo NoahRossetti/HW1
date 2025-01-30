@@ -60,7 +60,7 @@ while(fscanf(inputfile, "%d", &placeholder )){
   switch(op){
     case 1:
       sp=sp+1; 
-      pas[sp]=m;
+      pas[sp]=ir[2];
 
     break;
 
@@ -73,45 +73,45 @@ while(fscanf(inputfile, "%d", &placeholder )){
     case 3:
       sp=sp-1; 
       //might need to flip signs
-      pas[sp]=pas[base(bp,l)-ri[2];
+      pas[sp]=pas[base(bp,ir[1])]-ir[2];
 
     break;
 
     case 4:
       //might need to flip signs for directly below
-      pas[base(bp,n)-ri[2]]=pas[sp]; 
-      sp=sp-1
+      pas[base(bp,ir[1])-ir[2]]=pas[sp]; 
+      sp=sp-1;
 
     break;
 
     case 5:
-      pas[sp+1]=base(bp,ri[1]);
+      pas[sp+1]=base(bp,ir[1]);
       pas[sp+2]=bp;
-      pas[sp+3]=pc
+      pas[sp+3]=pc;
       bp=sp+1;
-      ps=ri[2];      
+      sp=ir[2];      
 
     break;
 
     case 6:
-      sp=sp+r[2];
+      sp=sp+ir[2];
 
     break;
 
     case 7:
-      pc=r[2];
+      pc=ir[2];
 
     break;
 
     case 8:
       if(pas[sp]==0){
-      pc=a;
+      pc=ir[2];
       }
       sp=sp+1;
     break;
 
     case 9:
-      if(r[2]==1){
+      if(ir[2]==1){
       printf("%d", pas[sp]);
       sp=sp-1;
       }
