@@ -3,7 +3,10 @@ Overall TODO
 - need to fix case 9 [done]
 - fix up ALU
 - check 3 and 4 for sign issues
-- ctrl f and remove TODO and like comments
+- run testcases
+- make sure output perfect match
+
+- ctrl f and remove TODO and such comments
 *********************************************************/
 
 
@@ -138,6 +141,8 @@ i=0;
         
         sp--;
 	scanf("%c", stack[sp]);
+
+	printf//debuggy
 	
       }
       else if(ir[2]==3){
