@@ -1,7 +1,7 @@
 /********************************************************
 Overall TODO
-- need to fix case 9
-- need to implement ALU
+- need to fix case 9 [done]
+- fix up ALU
 - check 3 and 4 for sign issues
 - ctrl f and remove TODO and like comments
 *********************************************************/
@@ -135,8 +135,10 @@ i=0;
       sp=sp+1;
       }
        else if(ir[2]==2){
-         //not sure what to do here
-        //scanf()
+        
+        sp--;
+	scanf("%c", stack[sp]);
+	
       }
       else if(ir[2]==3){
         eop=0;
@@ -146,7 +148,7 @@ i=0;
 
     break;
 
-    //Arithmentic operations will go in case 0 and will vary based on L
+   //Arithmentic operations in case 02 and will vary based on L
    case 2:
     if(ir[1]==0&&ir[2]==0){
       sp=bp+1;
