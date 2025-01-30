@@ -130,54 +130,54 @@ while(fscanf(inputfile, "%d", &placeholder )){
     //Arithmentic operations will go in case 0 and will vary based on l
     case 0;
     switch(ir[1]){
-      case 1;
+      case 1:
       pas[sp-1]=pas[sp-1]+pas[sp];
       sp=sp-1;
 
       break;
-      case 2;
+      case 2:
       pas[sp-1]=pas[sp-1] - pas[sp];
       sp=sp-1;
 
       break;
-      case 3;
+      case 3:
       pas[sp-1]= pas[sp-1]*pas[sp];
       sp=sp-1;
 
       break;
-      case 4;
+      case 4:
       pas[sp-1]= pas[sp-1]/pas[sp];
       sp=sp-1;
 
       break;
-      case 5;
+      case 5:
       pas[sp-1]= pas[sp-1]==pas[sp];
       sp=sp-1;
 
       break;
-      case 6;
+      case 6:
       pas[sp-1]= pas[sp-1]!=pas[sp];
       sp=sp-1;
 
       break;
-      case 7;
+      case 7:
       pas[sp-1]= pas[sp-1]<pas[sp];
       sp=sp-1;
 
       break;
-      case 8;
+      case 8:
 
       pas[sp-1]= pas[sp-1]<=pas[sp];
 
       sp=sp-1;
 
       break;
-      case 9;
+      case 9:
       pas[sp-1]= pas[sp-1]>pas[sp];
       sp=sp-1;
 
       break;
-      case 10;
+      case 10:
       pas[sp-1]= pas[sp-1]>=pas[sp];
       sp=sp-1;
 
