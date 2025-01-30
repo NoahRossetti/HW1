@@ -237,3 +237,35 @@ i=0;
 
 
 }
+
+/****************************************************
+
+case 1: //ADD
+	pas[sp + 1] = pas[sp + 1] + pas[sp];
+ 	sp++;
+  	break;
+   
+case 2: //SUB
+	pas[sp + 1] = pas[sp + 1] - pas[sp];
+ 	sp++;
+  	break;
+   
+case3: //MUL
+	pas[sp + 1] = pas[sp + 1] * pas[sp];
+ 	sp++;
+  	break;
+   
+case 4: //DIV
+	pas[sp + 1] = pas[sp + 1] / pas[sp];
+ 	sp++;
+  	break;
+   
+case 5: //EQL
+	if(pas[sp + 1] == pas[sp])
+ 	{
+  		pas[sp + 1] = 1; // im assuming 1 for "is equal" and 0 for not "equal" TODO
+  	}else pas[sp + 1] = 0;
+   
+	break;
+ 
+*******************************************************/
