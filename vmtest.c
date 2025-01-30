@@ -21,6 +21,11 @@ Overall TODO
 const int ARRAY_SIZE = 500;
 int pas[500]={0};
 
+
+
+
+
+
 int base( int BP, int L)
 {
 int arb = BP; // arb = activation record base
@@ -42,7 +47,7 @@ int sp = 500;
 int pc = 10;
 int i =10;
 
-
+int ar_tracking[500];
 
 int ir[3]={0};
 
@@ -59,7 +64,7 @@ if(inputfile==NULL){
 // inserts instructions from file to pas array
 while(fscanf(inputfile, "%d", &placeholder )==1){
      pas[i] = placeholder;
-     printf(" %d ", pas[i]);
+    //temporary printf(" %d ", pas[i]);
         i++;
 
 }
@@ -73,8 +78,19 @@ i=0;
   //This is where the execution steps will take place
   while(eop){
 
-        //printf("we loopin ");
-        printf("\n %d %d %d %d %d %d", ir[0],ir[1],ir[2],pc,bp,sp);
+
+        printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
+
+       //printing out the pas
+
+        for(i=499; i>=sp; i--){
+
+            printf(" %d ", pas[i]);
+
+
+        }
+
+
     //Places instructions from pas into the instruction register
     ir[0]=pas[pc];
     ir[1]=pas[pc+1];
@@ -90,8 +106,8 @@ i=0;
 
     case 3:
       sp=sp-1;
-
-      pas[sp]=pas[base(bp,ir[1])]-ir[2];
+        //dont subtract ir[2]
+      pas[sp]=pas[base(bp,ir[1])-ir[2]];
 
     break;
 
@@ -103,11 +119,12 @@ i=0;
     break;
 
     case 5:
+        // one of the functions where ar is updated
       pas[sp-1]=base(bp,ir[1]);
       pas[sp-2]=bp;
       pas[sp-3]=pc;
       bp=sp-1;
-      //temporary solution
+
       pc=ir[2];
     continue;
     break;
@@ -155,8 +172,8 @@ i=0;
 
    //Arithmentic operations in case 02 and will vary based on L
 
-   case 2: //NGL idk what this is checking for
-	   //but tbf I can see the hat man rn im so sleep deprived TODO
+   case 2:
+       //one of the functions where ar is updated
     if(ir[1]==0&&ir[2]==0){
       sp=bp+1;
       bp==pas[sp-2];
