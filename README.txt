@@ -13,8 +13,8 @@ This project is a P-Code Virtual machine
 [Sample command and expected output]
 
 ## Team Information (if applicable)
-- Noah Rossetti [Email]
-- David Carmo da409390@ucf.edu
+- Noah Rossetti, no310072@ucf.edu
+- David Carmo, da409390@ucf.edu
 
 ## Contact Information
 [Your Name, Email or other contact details]
