@@ -89,7 +89,7 @@ while(fscanf(inputfile, "%d", &placeholder )){
       pas[sp+2]=bp;
       pas[sp+3]=pc;
       bp=sp+1;
-      sp=ir[2];      
+      pc=ir[2];      
 
     break;
 
