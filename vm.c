@@ -79,17 +79,7 @@ i=0;
   while(eop){
 
 
-        //printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
-
-       //printing out the pas
-
-      // for(i=499; i>=sp; i--){
-           // if(ar_tracking[i]==-1)
-             //   printf("|");
-            //printf(" %d ", pas[i]);
-
-
-       //}
+        
 
 
     //Places instructions from pas into the instruction register
