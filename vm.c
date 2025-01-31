@@ -115,6 +115,7 @@ i=0;
         ar_tracking[bp]=-1;
 
       pc=ir[2];
+	    //switch case below will print mnemonic name for op code
         printf("\n");
     switch(ir[0]){
 
