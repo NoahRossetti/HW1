@@ -593,62 +593,9 @@ i=0;
 	   		sp++;
 			break;
 
-/*		// previous cases
-      case 1:
-      pas[sp+1]=pas[sp+1]+pas[sp];
-      sp=sp+1;
 
-      break;
-      case 2:
-      pas[sp+1]=pas[sp+1] - pas[sp];
-      sp=sp+1;
-
-      break;
-      case 3:
-      pas[sp+1]= pas[sp+1]*pas[sp];
-      sp=sp+1;
-
-      break;
-      case 4:
-      pas[sp+1]= pas[sp+1]/pas[sp];
-      sp=sp+1;
-
-      break;
-      case 5:
-      pas[sp+1]= pas[sp+1]==pas[sp];
-      sp=sp+1;
-
-      break;
-      case 6:
-      pas[sp+1]= pas[sp+1]!=pas[sp];
-      sp=sp+1;
-
-      break;
-      case 7:
-      pas[sp+1]= pas[sp+1]<pas[sp];
-      sp=sp+1;
-
-      break;
-      case 8:
-
-      pas[sp+1]= pas[sp+1]<=pas[sp];
-
-      sp=sp+1;
-
-      break;
-      case 9:
-      pas[sp+1]= pas[sp+1]>pas[sp];
-      sp=sp+1;
-
-      break;
-      case 10:
-      pas[sp+1]= pas[sp+1]>=pas[sp];
-      sp=sp+1;
-
-      break;
-   */ }
     }
-    //break;
+    
   }
     printf("\n");
     switch(ir[0]){
@@ -766,17 +713,7 @@ i=0;
 
 
 
- //printf("\n %d %d %d %d %d %d\t", ir[0],ir[1],ir[2],pc,bp,sp);
 
-       //printing out the pas
-
-        //for(i=499; i>=sp; i--){
-           // if(ar_tracking[i]==-1)
-         //       printf("|");
-           // printf(" %d ", pas[i]);
-
-
-    //    }
 
 
 
@@ -785,96 +722,4 @@ i=0;
 
 }
 
-/****************************************************
-	case 1: //ADD
-		pas[sp + 1] = pas[sp + 1] + pas[sp];
-	 	sp++;
-	  	break;
 
-	case 2: //SUB
-		pas[sp + 1] = pas[sp + 1] - pas[sp];
-	 	sp++;
-	  	break;
-
-	case3: //MUL
-		pas[sp + 1] = pas[sp + 1] * pas[sp];
-	 	sp++;
-	  	break;
-
-	case 4: //DIV
-		pas[sp + 1] = pas[sp + 1] / pas[sp];
-	 	sp++;
-	  	break;
-
-	case 5: //EQL
-		if(pas[sp + 1] == pas[sp])
-	 	{
-	  		pas[sp + 1] = 1; // im assuming 1 for "is equal" and 0 for "not equal" TODO
-
-	  	}
-	   else pas[sp + 1] = 0;
-
-	   sp++;
-
-	   break;
-
-	case 6: //NEQ
-		if(pas[sp + 1] != pas[sp])
-	 	{
-	  		pas[sp + 1] = 1; // im assuming 1 for "not equal" and 0 for "equal" TODO
-
-	  	}
-		else pas[sp + 1] = 0;
-
-	   sp++;
-
-	   break;
-
-	case 7: //LSS
-		if(pas[sp + 1] < pas[sp])
-	 	{
-	  		pas[sp + 1] = 1; // im assuming 1 for "less" and 0 for "greater" TODO
-
-	  	}
-		else pas[sp + 1] = 0;
-
-	   sp++;
-
-	   break;
-
-	case 8: //LEQ
-			if(pas[sp + 1] <= pas[sp])
-	 	{
-	  		pas[sp + 1] = 1; // im assuming 1 for "less than or equal" and 0 for "not that" TODO
-
-	  	}
-		else pas[sp + 1] = 0;
-
-	   sp++;
-
-	   break;
-
-	case 9: //GTR
-			if(pas[sp + 1] > pas[sp])
-	 	{
-	  		pas[sp + 1] = 1; // im assuming 1 for "greater" and 0 for "not that" TODO
-
-	  	}
-		else pas[sp + 1] = 0;
-
-	   sp++;
-
-	   break;
-
-	case 10: //GEQ
-			if(pas[sp + 1] >= pas[sp])
-	 	{
-	  		pas[sp + 1] = 1; // im assuming 1 for "greater" and 0 for "not that" TODO
-
-	  	}
-		else pas[sp + 1] = 0;
-
-	   sp++;
-
-	   break;
-*******************************************************/
