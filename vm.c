@@ -50,12 +50,7 @@ int ir[3]={0};
 
 FILE *inputfile = fopen("input", "r");
 
-  // Lets us know if there is a problem retrieving file ( will remove later )
-if(inputfile==NULL){
-    printf("no file ");
-
-	return 0;
-}
+  
 
 
 // inserts instructions from file to pas array
@@ -485,10 +480,10 @@ i=0;
 
     break;
 
-   //Arithmentic operations in case 02 and will vary based on L
+   //Arithmentic operations in case 02 and will vary based on m
 
    case 2:
-       //one of the functions where ar is updated
+       
     if(ir[1]==0&&ir[2]==0){
       sp=bp+1;
       bp=pas[sp-2];
