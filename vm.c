@@ -1,12 +1,9 @@
 /********************************************************
-Overall TODO
-- need to fix case 9 [done]
-- fix up ALU		[done] (check it tho)
-- check 3 and 4 for sign issues [done]
-- run testcases[done (without printing all the activation records)
-- make sure output perfect match(same as previous)
+ 
+ Noah Rossetti
 
-- ctrl f and remove TODO and other temporary comments
+ David Carmo
+
 *********************************************************/
 
 
