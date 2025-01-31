@@ -224,7 +224,7 @@ i=0;
 
 
     }
-       printf("   %d %d \t %d\t%d\t%d    ", ir[0],ir[1],ir[2],pc,bp,sp);
+       printf("   %d %d \t %d\t%d\t%d    ", ir[1], ir[2], pc, bp, sp);
 
        //printing out the pas
 
